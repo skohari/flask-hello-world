@@ -9,10 +9,10 @@ def index():
 
 @app.route('/')
 def greet():
-    time = datetime.now()
+    time = datetime.now().hour
     if time >= 0 and time < 12:
-        return 'Good Morning!'
+        return 'Good Morning! The time is ' + str(datetime.now())'
     elif time >= 12 and time < 16:
-        return 'Good Afternoon!'
+        return 'Good Afternoon! The time is ' + str(datetime.now())'
     else:
-        return 'Good Evening! The time is ' + str(time)
+        return 'Good Evening! The time is ' + str(datetime.now())
