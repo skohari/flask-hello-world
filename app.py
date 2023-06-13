@@ -15,4 +15,4 @@ def greet():
     elif time >= 12 and time < 16:
         return 'Good Afternoon!'
     else:
-        return 'Good Evening!'
+        return 'Good Evening! The time is ' + str(time)
