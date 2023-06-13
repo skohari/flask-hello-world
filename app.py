@@ -11,8 +11,8 @@ def index():
 def greet():
     time = datetime.now().hour
     if time >= 0 and time < 12:
-        return 'Good Morning! The time is ' + str(datetime.now())'
+        return 'Good Morning! The time is ' + str(datetime.now())
     elif time >= 12 and time < 16:
-        return 'Good Afternoon! The time is ' + str(datetime.now())'
+        return 'Good Afternoon! The time is ' + str(datetime.now())
     else:
         return 'Good Evening! The time is ' + str(datetime.now())
